@@ -265,7 +265,7 @@
                 });
 
                 setTimeout(() => {
-                    window.location.href = "https://product-profs.github.io/product-profs-web-v2/masterclass.html";
+                    window.location.href = "https://productprofs.com/beginner-masterclass";
                 }, 2000);
 
                 // If the form has errors, display them, inline if possible, or appended to #mce-error-response
