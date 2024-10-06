@@ -265,8 +265,8 @@
                 });
 
                 setTimeout(() => {
-                    window.location.href = "https://productprofs.com/beginner-masterclass";
-                }, 2000);
+                    window.location.href = "https://productprofs.com/beginner-masterclass.html";
+                }, 1000);
 
                 // If the form has errors, display them, inline if possible, or appended to #mce-error-response
             } else {

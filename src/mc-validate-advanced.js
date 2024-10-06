@@ -1,5 +1,4 @@
-/*! jQuery v1.9.0 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license */
-(function (
+/*! jQuery v1.9.0 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license */ (function (
     e,
     t
 ) {
@@ -7730,23 +7729,19 @@
          *	Error messages are displayed with the invalid input when possible, or appended to #mce-error-response
          */
         mce_success_cb: function (resp) {
-            $("#mc-embedded-subscribe").text('Loading');
             $("#mce-success-response").hide();
             $("#mce-error-response").hide();
 
             // On successful form submission, display a success message and reset the form
             if (resp.result == "success") {
                 $("#mce-" + resp.result + "-response").show();
-                $("#mce-" + resp.result + "-response").html(
-                    <span> Redirecting, please wait </span>
-                );
+                $("#mce-" + resp.result + "-response").html('Redirecting, please wait...');
                 $("#mc-embedded-subscribe-form").each(function () {
                     this.reset();
                 });
 
                 setTimeout(() => {
-                    window.location.href =
-                        "https://productprofs.com/advanced-masterclass";
+                    window.location.href = "https://productprofs.com/advanced-masterclass.html";
                 }, 1000);
 
                 // If the form has errors, display them, inline if possible, or appended to #mce-error-response
